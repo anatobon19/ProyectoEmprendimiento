@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300&display=swap');
+
+/*Estilos para el navbar*/
+.icon{
+    width: 100px;
+}
+
+.titulo{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;    /* Centra verticalmente */
+}
+
+.navbar{
+    background-color: #f88819;
+}
+
+.nav-item{
+    padding-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar .nav-link{
+    font-size: 18px; 
+    color: white; 
+}
+
+.navbar .nav-link:hover {
+    color: white; 
+}
+
+/*Estilos para el Formulario*/
+
+.containerForm{
+    display: block;
+    margin: auto;
+    background-color: #ffe0c1;
+    border-radius: 5px;
+}
