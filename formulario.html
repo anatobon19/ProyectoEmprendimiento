@@ -1,124 +1,387 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
-    <link rel="stylesheet" href="css/styleIndex.css">
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</head>
-<body>
-        <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 center-content">
-                <img class="icon" src="img/icon.png" alt="Logo de la página">
-                <p class="titulo">Emprende e Innova en Colombia</p>
+    <link rel="stylesheet" href="css/styleForm.css" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <!-- Encabezado de la pagina -->
+      <div class="row">
+        <div class="col-12 center-content">
+          <img class="icon" src="img/icon.png" alt="Logo de la página" />
+          <p class="titulo">Emprende e Innova en Colombia</p>
+        </div>
+      </div>
+
+      <!--Codigo navbar-->
+      <div class="row mb-4">
+        <nav class="navbar navbar-expand-lg mt-2">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarColor01"
+              aria-controls="navbarColor01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Conceptos y Definiciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Redes de Apoyo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Graficos Interactivos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="formulario.html">Formulario de Estimación</a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
+      </div>
+
+      <!--Codigo formulario-->
+      <div class="row d-flex justify-content-center mb-5">
+        <div class="col-6 containerForm pt-3">
+          <div class="mb-4 mt-2">
+            <h3 class="text-center">
+              Formulario: Evaluación de Capacidad de Emprendimiento e Innovación
+            </h3>
+          </div>
+
+          <form>
+          <div class="mb-3">
+            <h5>Sección 1: Perfil Personal y Motivación</h5>
+          </div>
+
+          <div class="mb-4">
+            <label for="pregunta1" class="form-label"
+              >1. ¿Cuál es tu nivel de motivación para emprender?</label
+            >
+            <select id="pregunta1" class="form-select form-select">
+              <option selected>Selecciona una respuesta</option>
+              <option value="1">(1) No tengo interés en emprender</option>
+              <option value="2">
+                (2) Tengo algo de interés, pero no lo he considerado seriamente
+              </option>
+              <option value="3">
+                (3) Estoy explorando la posibilidad, pero no tengo un plan
+                definido
+              </option>
+              <option value="4">
+                (4) Tengo un plan de negocio inicial y estoy tomando pasos hacia
+                mi emprendimiento
+              </option>
+              <option value="5">
+                (5) Estoy completamente comprometido/a y listo/a para emprender
+              </option>
+            </select>
+          </div>
+
+          <div class="mb-4">
+            <label for="pregunta2" class="form-label"
+              >2. ¿Cuáles de las siguientes afirmaciones describen mejor tu
+              actitud ante los desafíos?</label
+            >
+            <select id="pregunta2" class="form-select form-select">
+              <option selected>Selecciona una respuesta</option>
+              <option value="1">
+                (1) Evito los desafíos, prefiero quedarme en lo conocido
+              </option>
+              <option value="2">
+                (2) Afronto algunos desafíos, pero me siento cómodo/a en mi zona
+                de confort
+              </option>
+              <option value="3">
+                (3) Busco superar los desafíos, aunque a veces me siento
+                inseguro/a
+              </option>
+              <option value="4">
+                (4) Disfruto los desafíos y siempre busco aprender de ellos
+              </option>
+              <option value="5">
+                (5) Veo los desafíos como oportunidades de crecimiento y siempre
+                estoy dispuesto/a a asumir riesgos calculados
+              </option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <h5>Sección 2: Conocimiento y Habilidades</h5>
+          </div>
+
+          <div class="mb-4">
+            <label for="pregunta3" class="form-label"
+              >3. ¿Tienes experiencia previa en la creación o gestión de un
+              negocio?</label
+            >
+            <select id="pregunta3" class="form-select form-select">
+              <option selected>Selecciona una respuesta</option>
+              <option value="1">(1) No tengo ninguna experiencia</option>
+              <option value="2">
+                (2) He trabajado en una empresa, pero no en su gestión
+              </option>
+              <option value="3">
+                (3) He participado en algún proyecto emprendedor, pero no he
+                liderado
+              </option>
+              <option value="4">
+                (4) He liderado algún proyecto o negocio de forma parcial
+              </option>
+              <option value="5">
+                (5) Tengo experiencia amplia en la gestión de negocios y he
+                liderado varias iniciativas
+              </option>
+            </select>
+          </div>
+
+          <div class="mb-4">
+            <label for="pregunta4" class="form-label"
+              >4. ¿Qué tan bien conoces el mercado o sector en el que planeas
+              emprender?</label
+            >
+            <select id="pregunta4" class="form-select form-select">
+              <option selected>Selecciona una respuesta</option>
+              <option value="1">
+                (1) No tengo conocimiento sobre el mercado ni el sector
+              </option>
+              <option value="2">
+                (2) Tengo conocimientos limitados y estoy comenzando a
+                investigar
+              </option>
+              <option value="3">
+                (3) Conozco algo del sector, pero me falta más profundidad.
+              </option>
+              <option value="4">
+                (4) Tengo un buen conocimiento del sector y he realizado
+                investigación
+              </option>
+              <option value="5">
+                (5) Soy experto/a en el sector y tengo un entendimiento profundo
+                del mercado
+              </option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <h5>Sección 3: Innovación y Creatividad</h5>
+          </div>
+
+          <div class="mb-4">
+            <label for="pregunta5" class="form-label"
+              >5. ¿Cuánto valoras la innovación en los productos o servicios que
+              ofreces?</label
+            >
+            <select id="pregunta5" class="form-select form-select">
+              <option selected>Selecciona una respuesta</option>
+              <option value="1">
+                (1) No considero la innovación, hago lo que todos hacen
+              </option>
+              <option value="2">
+                (2) Algo de innovación, pero me conformo con lo básico
+              </option>
+              <option value="3">
+                (3) Busco innovar, pero no siempre tengo nuevas ideas
+              </option>
+              <option value="4">
+                (4) Busco constantemente nuevas maneras de hacer las cosas y
+                mejorar mis productos
+              </option>
+              <option value="5">
+                (5) La innovación es el núcleo de mi negocio, siempre estoy
+                buscando nuevas ideas y enfoques disruptivos
+              </option>
+            </select>
+          </div>
+
+          <div class="mb-4">
+            <label for="pregunta6" class="form-label">
+              6. ¿Cómo defines tu capacidad para resolver problemas de manera
+              creativa?</label
+            >
+            <select id="pregunta6" class="form-select form-select">
+              <option selected>Selecciona una respuesta</option>
+              <option value="1">
+                (1) No suelo encontrar soluciones creativas a los problemas
+              </option>
+              <option value="2">
+                (2) Resuelvo problemas de manera convencional, sin pensar en
+                soluciones innovadoras
+              </option>
+              <option value="3">
+                (3) En ocasiones encuentro soluciones creativas, pero no de
+                forma sistemática
+              </option>
+              <option value="4">
+                (4) Regularmente encuentro soluciones creativas, pero aún me
+                cuesta pensar fuera de la caja
+              </option>
+              <option value="5">
+                (5) Siempre busco soluciones innovadoras y creativas para los
+                problemas que enfrento
+              </option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <h5>Sección 4: Conexiones y Red de Apoyo</h5>
+          </div>
+
+          <div class="mb-4">
+            <label for="pregunta7" class="form-label"
+              >7. ¿Cuentas con una red de contactos o mentores que te apoyen en
+              tu emprendimiento?</label
+            >
+            <select id="pregunta7" class="form-select form-select">
+              <option selected>Selecciona una respuesta</option>
+              <option value="1">(1) No tengo ninguna red de apoyo</option>
+              <option value="2">
+                (2) Tengo algunos contactos, pero no son clave para mi
+                emprendimiento
+              </option>
+              <option value="3">
+                (3) Tengo algunos mentores o personas de apoyo, pero aún no son
+                muchos
+              </option>
+              <option value="4">
+                (4) Tengo una red sólida de contactos y mentores que me apoyan
+                activamente
+              </option>
+              <option value="5">
+                (5) Cuento con una red amplia de mentores, inversionistas y
+                contactos clave que respaldan mi emprendimiento
+              </option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <h5>Sección 5: Capacidad de Adaptación y Escalabilidad</h5>
+          </div>
+
+          <div class="mb-4">
+            <label for="pregunta8" class="form-label">
+              8. ¿Cómo manejas los cambios inesperados o las crisis dentro de un
+              emprendimiento?
+            </label>
+            <select id="pregunta8" class="form-select form-select">
+              <option selected>Selecciona una respuesta</option>
+              <option value="1">
+                (1) Me cuesta mucho adaptarme a los cambios y crisis
+              </option>
+              <option value="2">
+                (2) Generalmente me siento desbordado/a, pero trato de encontrar
+                soluciones
+              </option>
+              <option value="3">
+                (3) Me adapto con algo de dificultad, pero trato de resolver los
+                problemas
+              </option>
+              <option value="4">
+                (4) Suelo adaptarme bien y busco soluciones innovadoras ante las
+                crisis
+              </option>
+              <option value="5">
+                (5) Me siento cómodo/a con los cambios y soy capaz de reinventar
+                mi negocio de manera efectiva
+              </option>
+            </select>
+          </div>
+
+          <div class="mb-4">
+            <label for="pregunta9" class="form-label">
+              9. ¿Cuál es tu enfoque para hacer crecer un negocio?
+            </label>
+            <select id="pregunta9" class="form-select form-select">
+              <option selected>Selecciona una respuesta</option>
+              <option value="1">
+                (1) Me cuesta mucho adaptarme a los cambios y crisis
+              </option>
+              <option value="2">
+                (2) Planeo crecer de manera orgánica, sin mucho esfuerzo
+                adicional
+              </option>
+              <option value="3">
+                (3) Estoy comenzando a pensar en cómo escalar, pero no tengo un
+                plan detallado
+              </option>
+              <option value="4">
+                (4) Tengo un plan claro para hacer crecer el negocio, pero aún
+                estoy en las primeras etapas
+              </option>
+              <option value="5">
+                (5) Ya tengo una estrategia clara y ejecutada para escalar mi
+                negocio de manera eficiente
+              </option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <h5>Sección 5: Capacidad de Adaptación y Escalabilidad</h5>
+          </div>
+
+          <div class="mb-4">
+            <label for="pregunta10" class="form-label">
+              10. ¿Consideras que tu emprendimiento tiene un impacto social o
+              ambiental positivo?
+            </label>
+            <select id="pregunta10" class="form-select form-select">
+              <option selected>Selecciona una respuesta</option>
+              <option value="1">
+                (1) No, no estoy enfocado/a en el impacto social o ambiental
+              </option>
+              <option value="2">
+                (2) Algo de impacto, pero no es el foco principal de mi negocio
+              </option>
+              <option value="3">
+                (3) Estoy comenzando a pensar en el impacto, pero no tengo una
+                estrategia clara
+              </option>
+              <option value="4">
+                (4) Mi emprendimiento tiene un impacto social o ambiental
+                positivo y estoy buscando aumentar ese impacto
+              </option>
+              <option value="5">
+                (5) Mi negocio está completamente alineado con objetivos
+                sociales o ambientales y busca generar un cambio significativo
+              </option>
+            </select>
+          </div>
+
+          <div class="d-flex justify-content-center mb-4">
+            <button type="submit" class="btn">Enviar</button>
+          </div>
+        </form>
         </div>
+      </div>
 
-        <!--Codigo navbar-->
-        <div class="row mb-4">
-            <nav class="navbar navbar-expand-lg mt-2">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarColor01">
-                    <ul class="navbar-nav mx-auto ">
-                      <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Conceptos y Definiciones</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Redes de Apoyo</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Graficos Interactivos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="formulario.html">Formulario de Estimación</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </div>
-
-
-        <!--Codigo formulario-->
-        <div class="row">
-            <div class="col-6 containerForm pt-3">
-                <div class="mb-3">
-                    <h3 class="text-center">Formulario: Evaluación de Capacidad de Emprendimiento e Innovación</h3>
-                </div>
-
-                <div class="mb-3">
-                    <h5>Sección 1: Perfil Personal y Motivación</h5>
-                </div>
-
-
-                <div class="mb-4">
-                    <label for="pregunta1" class="form-label">1. ¿Cuál es tu nivel de motivación para emprender?</label>
-                <select id="pregunta1" class="form-select form-select">
-                    <option selected>Selecciona una respuesta</option>
-                    <option value="1">(1) No tengo interés en emprender</option>
-                    <option value="2">(2) Tengo algo de interés, pero no lo he considerado seriamente</option>
-                    <option value="3">(3) Estoy explorando la posibilidad, pero no tengo un plan definido</option>
-                    <option value="4">(4) Tengo un plan de negocio inicial y estoy tomando pasos hacia mi emprendimiento</option>
-                    <option value="5">(5) Estoy completamente comprometido/a y listo/a para emprender</option>
-                </select>
-                </div>
-
-
-                <div class="mb-4">
-                    <label for="pregunta2" class="form-label">2. ¿Cuáles de las siguientes afirmaciones describen mejor tu actitud ante los desafíos?</label>
-                <select id="pregunta2" class="form-select form-select">
-                    <option selected>Selecciona una respuesta</option>
-                    <option value="1">(1) Evito los desafíos, prefiero quedarme en lo conocido</option>
-                    <option value="2">(2) Afronto algunos desafíos, pero me siento cómodo/a en mi zona de confort</option>
-                    <option value="3">(3) Busco superar los desafíos, aunque a veces me siento inseguro/a</option>
-                    <option value="4">(4) Disfruto los desafíos y siempre busco aprender de ellos</option>
-                    <option value="5">(5) Veo los desafíos como oportunidades de crecimiento y siempre estoy dispuesto/a a asumir riesgos calculados</option>
-                </select>
-                </div>
-                
-
-                <div class="mb-3">
-                    <h5>Sección 2: Conocimiento y Habilidades</h5>
-                </div>
-
-
-                <div class="mb-4">
-                    <label for="pregunta3" class="form-label">3. ¿Tienes experiencia previa en la creación o gestión de un negocio?</label>
-                <select id="pregunta3" class="form-select form-select">
-                    <option selected>Selecciona una respuesta</option>
-                    <option value="1">(1) No tengo ninguna experiencia</option>
-                    <option value="2">(2) He trabajado en una empresa, pero no en su gestión</option>
-                    <option value="3">(3) He participado en algún proyecto emprendedor, pero no he liderado</option>
-                    <option value="4">(4) He liderado algún proyecto o negocio de forma parcial</option>
-                    <option value="5">(5) Tengo experiencia amplia en la gestión de negocios y he liderado varias iniciativas</option>
-                </select>
-                </div>
-
-
-                <div class="mb-4">
-                    <label for="pregunta4" class="form-label">4. ¿Qué tan bien conoces el mercado o sector en el que planeas emprender?</label>
-                <select id="pregunta4" class="form-select form-select">
-                    <option selected>Selecciona una respuesta</option>
-                    <option value="1">(1) No tengo conocimiento sobre el mercado ni el sector</option>
-                    <option value="2">(2) Tengo conocimientos limitados y estoy comenzando a investigar</option>
-                    <option value="3">(3) Conozco algo del sector, pero me falta más profundidad.</option>
-                    <option value="4">(4) Tengo un buen conocimiento del sector y he realizado investigación</option>
-                    <option value="5">(5) Soy experto/a en el sector y tengo un entendimiento profundo del mercado</option>
-                </select>
-                </div>
-
-            </div>
-        </div>
     </div>
-</body>
+  </body>
 </html>

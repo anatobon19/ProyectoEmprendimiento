@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300&display=swap');
+
 /*Estilos para el navbar*/
 .icon{
     width: 100px;
@@ -29,15 +30,20 @@
 
 .navbar .nav-link{
     font-size: 18px; 
-    color: white ; 
+    color: white 
 }
 
 .navbar .nav-link:hover {
     color: black; 
 }
 
-.containerResumen {
-    font-size: large;
-    
+/*Estilos para el Formulario*/
+.containerForm{
+    background-color: #ffe0c1;
+    border-radius: 5px;
 }
 
+.btn {
+    background-color: #f88819 !important;
+    width: 400px;
+}
