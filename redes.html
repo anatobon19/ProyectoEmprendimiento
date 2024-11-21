@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes de Apoyo</title>
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+       .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #f88819;
+    margin-top: 130px;
+}
+
+.resource {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resource h2 {
+    font-size: 1.8em;
+    color: #f88819;
+    margin-bottom: 10px;
+}
+
+.resource p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.resource:hover {
+    background-color: #fbfbfb;
+    transform: scale(1.03);
+    transition: all 0.4s ease-in-out;
+}
+
+
+        .card-container {
+          perspective: 1000px;
+          width: 300px;
+          height: 200px;
+          margin: 80px;
+          display: inline-block; /* Permite múltiples tarjetas en línea */
+          
+         
+          
+        
+        }
+      
+        .card {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          transform-style: preserve-3d;
+          transition: transform 1.5s;
+         
+          
+          
+        }
+      
+        .card-container:hover .card {
+          transform: rotateY(180deg);
+        }
+      
+        .front, .back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          border: 2px solid #e7b661;
+          border-radius: 10px;
+          overflow: hidden;
+        }
+      
+        .card1 .front {
+          background: url(img/camaracomercio.png) no-repeat center;
+          background-size: cover;
+        }
+        .card2 .front {
+          background: url(img/INNpulsa.png) no-repeat center;
+          background-size: cover;
+        }
+        .card3 .front {
+          background: url(img/fondoemprender.png) no-repeat center;
+          background-size: cover;
+        }
+      
+        .back {
+          background-color: #f8f9fa;
+          transform: rotateY(180deg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: Arial, sans-serif;
+          color: #333;
+          padding: 20px;
+          box-sizing: border-box;
+        }
+        button {
+    background-color: #e7b661;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #c7a160;
+  }
+     
+      </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 center-content">
+                <img class="icon" src="img/icon.png" alt="Logo de la página">
+                <p class="titulo">Emprende e Innova en Colombia</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <nav class="navbar navbar-expand-lg mt-2">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav mx-auto ">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Conceptos y Definiciones</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="redes.html">Redes de Apoyo</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Graficos Interactivos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="formulario.html">Formulario de Estimación</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </div>
+    <div class="row">
+        <img src="img/Banner oferta grafico amarillo gris azul.png" alt="Banner de Redes de Apoyo" style="width: 100%; height: 500px;">
+
+    </div>
+   
+    <div class="row main-conteiner">
+        <div class="card-container">
+            <h1>Camara de Comercio</h1>
+            <div class="card card1">
+              <div class="front"></div>
+              <div class="back">
+                <p>Ayuda a los emprendedores con la formalización de sus negocios, 
+                capacitación, acceso a redes, soluciones financieras y resolución de conflictos, 
+                impulsando su crecimiento.</p>
+              </div>
+              
+            </div>
+            <button onclick="window.open('https://camarasdecomerciocolombia.com/', '_blank');">
+                Sitio Web
+              </button>
+          </div>
+          
+          <div class="card-container">
+            <h1>INNpulsa Colombia</h1>
+            <div class="card card2">
+              <div class="front"></div>
+              <div class="back">
+                <p>Entidad gubernamental dedicada a promover el emprendimiento y la innovación en el país,
+                 impulsando el desarrollo de nuevas empresas tecnológicas y fomentando la competitividad.
+                 </p>
+              </div>
+            </div>
+            <button onclick="window.open('https://www.innpulsacolombia.com/', '_blank');">
+                Sitio Web
+              </button>
+          </div>
+          
+          <div class="card-container">
+            <h1>Fondo Emprender</h1>
+            <div class="card card3">
+              <div class="front"></div>
+              <div class="back">
+                <p> ofrece recursos financieros y apoyo técnico a emprendedores para la creación de empresas. 
+                Su objetivo es fomentar la generación de empleo y el fortalecimiento de nuevas ideas de negocio en el país.</p>
+              </div>
+            </div>
+            <button onclick="window.open('https://www.sena.edu.co/es-co/trabajo/Paginas/fondo-emprender.aspx', '_blank');">
+                Sitio Web
+              </button>
+            
+          </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Recursos para Emprendedores</h1>
+        </header>
+
+        <section class="resource">
+            <h2>Incubadoras de Empresas</h2>
+            <p>Las incubadoras de empresas son organizaciones que brindan apoyo a emprendedores en las primeras etapas de sus proyectos. Ofrecen espacio físico, recursos, mentoría, capacitación y, a veces, financiamiento para ayudar a las startups a validar su modelo de negocio y crecer de manera sostenible. Su objetivo es minimizar el riesgo empresarial al proporcionar un entorno controlado donde los emprendedores puedan desarrollar sus ideas.</p>
+        </section>
+
+        <section class="resource">
+            <h2>Aceleradoras de Negocios</h2>
+            <p>Las aceleradoras de negocios están diseñadas para apoyar a empresas en etapa temprana que ya tienen un producto o servicio y buscan escalar rápidamente. A diferencia de las incubadoras, las aceleradoras tienen programas intensivos y de corta duración (generalmente de 3 a 6 meses) que incluyen mentoría especializada, inversión inicial, acceso a redes de contactos, y apoyo en áreas clave como marketing, ventas, financiamiento y operaciones. Al finalizar el programa, las empresas suelen participar en una ronda de "demo day", donde presentan sus avances a inversionistas potenciales.</p>
+        </section>
+
+        <section class="resource">
+            <h2>Fondos de Inversión</h2>
+            <p>Los fondos de inversión son vehículos financieros que agrupan el dinero de varios inversores para financiar empresas emergentes o startups. Pueden ser fondos de capital riesgo (venture capital) que invierten en empresas con alto potencial de crecimiento, o fondos de capital privado que invierten en empresas más maduras. Los fondos proporcionan el capital necesario para que las empresas puedan expandirse y alcanzar sus objetivos, a cambio de una participación en la empresa.</p>
+        </section>
+
+        <section class="resource">
+            <h2>Asesorías para Emprendedores</h2>
+            <p>Las asesorías para emprendedores son servicios proporcionados por expertos que brindan orientación y conocimientos a los emprendedores sobre cómo gestionar y hacer crecer su negocio. Estas asesorías pueden abordar áreas como estrategia empresarial, gestión financiera, marketing, ventas, desarrollo de productos, y más. Las asesorías pueden ser individuales o grupales y son fundamentales para que los emprendedores tomen decisiones informadas y eviten errores comunes en el proceso de creación de una empresa.</p>
+        </section>
+    </div>
+   
+    
+    
+
+    
+</body>
+</html>
