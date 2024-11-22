@@ -41,3 +41,18 @@
     
 }
 
+/*Extra*/
+.resumenPagina img{
+    border-radius: 8px;
+}
+
+.resumenPagina{
+    display: flex;
+    align-items: center;
+    
+}
+
+.text {
+font-size: 17px;
+color: #5c5a5a;
+}
